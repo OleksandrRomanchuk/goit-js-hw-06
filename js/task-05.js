@@ -13,7 +13,6 @@ function onChangeInputValue(event) {
 }
 
 // function onChangeInputValue() {
-//   const nameValue = refs.inputEl.value.trim();
 //   refs.outputEl.textContent =
 //     refs.inputEl.value.trim() === "" ? "Anonymous" : refs.inputEl.value.trim();
 // }
