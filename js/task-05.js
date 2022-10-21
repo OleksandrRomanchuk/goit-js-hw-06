@@ -6,13 +6,14 @@ const refs = {
 refs.inputEl.addEventListener("input", onChangeInputValue);
 
 function onChangeInputValue(event) {
-  const nameValue = event.currentTarget.value.trim();
   refs.outputEl.textContent =
-    nameValue === "" ? refs.outputEl.textContent : nameValue;
+    event.currentTarget.value.trim() === ""
+      ? "Anonymous"
+      : event.currentTarget.value.trim();
 }
 
 // function onChangeInputValue() {
 //   const nameValue = refs.inputEl.value.trim();
 //   refs.outputEl.textContent =
-//     nameValue === "" ? refs.outputEl.textContent : nameValue;
+//     refs.inputEl.value.trim() === "" ? "Anonymous" : refs.inputEl.value.trim();
 // }
