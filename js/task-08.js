@@ -24,7 +24,7 @@ function onFormSubmit(event) {
 function formFieldsValidation(form) {
   const isFullField = document.querySelectorAll(`${FORM_SELECTOR} input`);
 
-  return [...isFullField].some((field) => field.value)
+  return [...isFullField].every((field) => field.value)
     ? true
     : alert("Hello! All fields must be filled!");
 }
