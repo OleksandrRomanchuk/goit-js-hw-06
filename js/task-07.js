@@ -3,8 +3,8 @@ const refs = {
   textElToChange: document.querySelector("#text"),
 };
 
-refs.rangeEl.addEventListener("input", onChangeValue);
+refs.rangeEl.addEventListener("input", onChangeInputValue);
 
-function onChangeValue(event) {
+function onChangeInputValue(event) {
   refs.textElToChange.style.fontSize = event.currentTarget.value + "px";
 }
