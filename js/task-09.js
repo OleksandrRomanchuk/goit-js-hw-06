@@ -4,9 +4,9 @@ const refs = {
   outputEl: document.querySelector(".color"),
 };
 
-refs.buttonEl.addEventListener("click", onClkChangeColor);
+refs.buttonEl.addEventListener("click", onClkChangeBodyColor);
 
-function onClkChangeColor() {
+function onClkChangeBodyColor() {
   const newColor = getRandomHexColor();
   refs.bodyEl.style.backgroundColor = newColor;
   refs.outputEl.textContent = newColor;
