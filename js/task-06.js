@@ -1,9 +1,12 @@
-const elToValiate = document.querySelector("#validation-input");
+const elToValidate = document.querySelector("#validation-input");
 
-elToValiate.addEventListener("blur", onFocusChange);
+elToValidate.addEventListener("blur", onFocusChange);
 
 function onFocusChange(event) {
-  if (event.currentTarget.value.length >= event.currentTarget.dataset.length) {
+  if (
+    event.currentTarget.value.length ===
+    Number(event.currentTarget.dataset.length)
+  ) {
     event.currentTarget.classList.remove("invalid");
     event.currentTarget.classList.add("valid");
   } else {
