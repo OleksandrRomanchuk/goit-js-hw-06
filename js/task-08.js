@@ -22,7 +22,7 @@ function onFormSubmit(event) {
 }
 
 function formFieldsValidation(form) {
-  const isFullField = document.querySelectorAll(`${FORM_SELECTOR} input`);
+  const isFullField = form.querySelectorAll("input");
 
   return [...isFullField].every((field) => field.value)
     ? true
